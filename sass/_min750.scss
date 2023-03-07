@@ -1,0 +1,100 @@
+
+@media (min-width:750px) {
+
+body{
+    display: grid;
+    place-items: center;
+
+    main{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: 1fr;
+        box-shadow: 0 0 20px 20px $clr-1000;
+        border-radius: 1.8rem;
+
+        .result{
+            border-radius:1.8rem ;
+
+            &__container{
+                border-radius: 1.8rem;
+                padding-inline: 3rem;
+
+                &__result {
+                    width: 220px;
+                    
+                    span:first-of-type{
+                        font-size: 4.6rem;
+                    }
+                }
+
+                &__information{
+                    width: 25ch;
+                    text-align: center;
+                    font-size: $fs-1;
+                    padding-block-end: 3rem;
+                }
+            }
+        }
+
+        .summary{
+            display: flex;
+            flex-direction: column;
+            gap: 1.2rem;
+
+            padding: 1.6rem;
+
+            h2{
+                font-size: $fs-1;
+            }
+
+            &__progress {
+                background-color: var(--bg-clr);
+                border-radius: 0.8rem;
+
+                padding: 1rem;
+
+                display: flex;
+
+                img{
+
+                }
+
+                p{
+                    padding-inline-start: 0.6rem;
+                    color: var(--clr);
+                    font-weight: $fw-2;
+
+                }
+
+                &__counter{
+                    margin-inline-start: auto;
+                    font-weight: $fw-3;
+
+                    span{
+                        color: $clr-1100;
+                    }
+                }
+            }
+
+            button {
+                border:none;
+                padding: 1rem;
+                border-radius: 100vw;
+                color: $clr-900;
+                background-color: $clr-1200 ;
+                font-size: $fs-1;
+                cursor: pointer;
+
+                &:hover{
+                    background-image: linear-gradient(180deg,$clr-700,$clr-600);
+                }
+            }
+        }
+    }
+
+    .attribution{
+        margin-block-end: 10rem;
+    }
+}
+}
+
